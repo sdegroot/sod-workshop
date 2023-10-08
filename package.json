@@ -1,0 +1,30 @@
+{
+  "name": "zod-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc && npm run test",
+    "build:watch": "tsc --watch",
+    "test": "ts-mocha 'src/**/*.test.ts'",
+    "test:watch": "ts-mocha 'src/**/*.test.ts' -w --watch-files 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdegroot/zod-workshop.git"
+  },
+  "author": "Sander de Groot",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/sdegroot/zod-workshop/issues"
+  },
+  "homepage": "https://github.com/sdegroot/zod-workshop#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.2",
+    "chai": "^4.3.10",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.2.2"
+  }
+}
