@@ -1,5 +1,6 @@
 import { assert, expect } from "chai";
 import { ZodError, ZodIssue } from "zod";
+import { fromZodError } from "zod-validation-error";
 
 export function expectZodErrors(fn: () => any, expectedErrors: ZodIssue[]) {
     try {
@@ -7,7 +8,7 @@ export function expectZodErrors(fn: () => any, expectedErrors: ZodIssue[]) {
         assert.fail('Expected ZodErrors: ' + expectedErrors)
     } catch (error) {
         if (error instanceof ZodError) {
-            // console.log(JSON.stringify(error.issues, null, 2));
+            // console.log(fromZodError(error).toString())
             expect(error.issues).to.have.same.deep.members(expectedErrors);
         } else {
             throw error;
