@@ -1,5 +1,9 @@
 # zod-workshop
 
+For all features of Zod, see https://zod.dev/
+
+A high over presentation about Zod: - https://view.genial.ly/64542993eed84100198e6d05/presentation-zod 
+
 ## Installation 
 
 ```
