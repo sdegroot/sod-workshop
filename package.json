@@ -10,7 +10,9 @@
     "test:comparison": "ts-mocha 'src/comparison/**/*.test.ts'",
     "test:all": "ts-mocha 'src/**/*.test.ts'",
     "test:one": "ts-mocha \"src/challenges/challenge_$npm_config_challenge/challenge.test.ts\"",
-    "test:one:watch": "ts-mocha \"src/challenges/challenge_$npm_config_challenge/*.test.ts\" -w --watch-files \"src/challenges/challenge_$npm_config_challenge/*.ts\""
+    "test:one:watch": "ts-mocha \"src/challenges/challenge_$npm_config_challenge/*.test.ts\" -w --watch-files \"src/challenges/challenge_$npm_config_challenge/*.ts\"",
+    "test:demo": "ts-mocha \"src/demo/*.test.ts\"",
+    "test:demo:watch": "ts-mocha \"src/demo/*.test.ts\" -w --watch-files \"src/demo/*.ts\""
   },
   "repository": {
     "type": "git",
