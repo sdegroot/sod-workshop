@@ -7,8 +7,10 @@
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc && npm run test",
     "build:watch": "tsc --watch",
-    "test": "ts-mocha 'src/**/*.test.ts'",
-    "test:watch": "ts-mocha 'src/**/*.test.ts' -w --watch-files 'src/**/*.ts'"
+    "test:comparison": "ts-mocha 'src/comparison/**/*.test.ts'",
+    "test:all": "ts-mocha 'src/**/*.test.ts'",
+    "test:one": "ts-mocha \"src/challenges/challenge_$npm_config_challenge/challenge.test.ts\"",
+    "test:one:watch": "ts-mocha \"src/challenges/challenge_$npm_config_challenge/*.test.ts\" -w --watch-files \"src/challenges/challenge_$npm_config_challenge/*.ts\""
   },
   "repository": {
     "type": "git",
